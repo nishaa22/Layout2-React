@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.page {
+    nav {
+        width: 100%;
+        background-color: black;
+        height: 45px;
+        padding: 10px 60px;
+
+        a {
+            color: gray;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 20px 10px;
+
+            .nav__item {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .content {
+        padding: 40px 70px;
+        margin: 20px 0px;
+        width: 100%;
+
+        .content__box {
+            width: 100%;
+            padding: 60px 60px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 8px;
+                span {
+                    font-size: 45px;
+                }
+
+                p {
+                    font-size: 17px;
+                    margin: 10px 0px;
+                }
+                button {
+                    padding: 10px 12px;
+                    background-color: #428bca;
+                    color: white;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+        }
+
+        .content__latestBox {
+            width: 100%;
+
+            span {
+                font-size: 24px;
+                font-weight: 500;
+            }
+
+            .content__latestBox__item {
+                margin-top: 10px;
+                display: flex;
+
+                .content__latestBox__item__Box {
+                    margin-right: 10px;
+                    border: 1px solid rgb(238, 238, 238);
+                    border-radius: 5px;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        padding: 5px;
+                    }
+
+                    .content__latestBox__item__BoxText {
+                        text-align: center;
+                        margin: 20px 10px;
+
+                        p {
+                            font-size: 14px;
+                            margin: 10px;
+                        }
+
+                        button {
+                            padding: 10px 12px;
+                            background-color: #428bca;
+                            color: white;
+                            border: none;
+                            outline: none;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            margin-bottom: 5px;
+                    margin-right: 5px;
+
+                        }
+                        .info {
+                            background-color: white;
+                            color: black;
+                            border: 1px solid rgb(218, 217, 217);
+                        }
+                    }
+                }
+
+                
+            }
+            hr {
+                margin: 20px 0px;
+                border: 1px solid rgb(240, 240, 240);
+                background-color: rgb(240, 240, 240);
+            }
+
+            .foot {
+                margin: 50px 0px;
+            }
+        }
+
+        footer {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .page {
+        nav {
+            a {
+                font-size: 16px;
+                padding: 20px 10px;
+
+                .nav__item {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .content {
+            margin: 0px 0px;
+            padding: 50px 50px;
+            width: 100%;
+
+            .content__latestBox {
+                width: 100%;
+
+                .foot {
+                    margin: 45px 0px;
+                }
+
+                .content__latestBox__item {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .content__latestBox__item__Box {
+                        margin-bottom: 20px;
+                        width: 48%;
+
+                        .content__latestBox__item__BoxText {
+                            span {
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                font-size: 15px;
+                            }
+
+                            button {
+                                padding: 10px 12px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content__box {
+                width: 100%;
+
+                span {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:599px) {
+    .page {
+        nav {
+            padding: 10px 40px;
+
+            a {
+                font-size: 14px;
+                padding: 20px 10px;
+
+                .nav__item {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .content {
+            margin: 0px 0px;
+            padding: 40px 40px;
+            width: 100%;
+
+            .content__latestBox {
+                width: 100%;
+
+                .foot {
+                    margin: 40px 0px;
+                }
+
+                .content__latestBox__item {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .content__latestBox__item__Box {
+                        margin-bottom: 20px;
+                        width: 47%;
+
+                        .content__latestBox__item__BoxText {
+                            span {
+                                font-size: 20px;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                font-size: 15px;
+                            }
+
+                            button {
+                                padding: 10px 12px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content__box {
+                width: 100%;
+                padding: 40px 40px;
+
+                span {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:260px) and (max-width:424px) {
+    .page {
+        nav {
+            width: 100%;
+            background-color: black;
+            display: grid;
+            height: 140px;
+            padding: 10px 30%;
+
+            a {
+                font-size: 12px;
+                padding: 0px 30%;
+
+                .nav__item {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .content {
+            margin: 0px 0px;
+            padding: 30px 30px;
+            width: 100%;
+
+            .content__latestBox {
+                width: 100%;
+
+                .content__latestBox__item {
+                    margin-top: 10px;
+                    display: block;
+
+                    .content__latestBox__item__Box {
+                        margin-bottom: 20px;
+                        width: 98%;
+
+                        .content__latestBox__item__BoxText {
+                            margin: 10px 10px;
+
+                            span {
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                font-size: 13px;
+                            }
+
+                            button {
+                                padding: 9px 11px;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+
+                .foot {
+                    margin: 35px 0px;
+                }
+            }
+
+            .content__box {
+                padding: 30px 40px;
+                width: 100%;
+
+                span {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    }
+}
