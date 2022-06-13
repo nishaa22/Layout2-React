@@ -22,20 +22,14 @@
     margin-bottom: 5px;
 }
 
-$f20: 20px;
-$f18: 18px;
-$f45: 45px;
-$f17: 17px;
-$f24: 24px;
-$f14: 14px;
-$f16: 16px;
-$f15: 15px;
-$f35: 35px;
-$f12: 12px;
-$f13: 13px;
-$f25: 25px;
-
-
+    $font-size-sm: 0.875rem;
+    $font-size-md: 1rem; //16
+    $font-size-lg: 1.125rem;
+    $font-size-xl: 1.25rem;
+    $font-size-2xl: 1.5rem;
+    $font-size-3xl: 2rem;
+    $font-size-4xl: 2rem; //32
+    $font-size-5xl :  3rem;//48
 .page {
     nav {
         width: 100%;
@@ -45,12 +39,12 @@ $f25: 25px;
 
         a {
             color: gray;
-            font-size: $f16;
+            font-size: $font-size-md;
             text-decoration: none;
             padding: 20px 10px;
 
             .nav__item {
-                font-size: $f18;
+                font-size: $font-size-lg;
             }
         }
     }
@@ -67,11 +61,11 @@ $f25: 25px;
             border-radius: 8px;
 
             span {
-                font-size: $f45;
+                font-size: $font-size-5xl;
             }
 
             p {
-                font-size: $f17;
+                font-size: $font-size-lg;
                 margin: 10px 0px;
             }
 
@@ -84,7 +78,7 @@ $f25: 25px;
             width: 100%;
 
             span {
-                font-size: $f24;
+                font-size: $font-size-2xl;
                 font-weight: 500;
             }
 
@@ -108,7 +102,7 @@ $f25: 25px;
                         margin: 20px 10px;
 
                         p {
-                            font-size: $f14;
+                            font-size: $font-size-sm;
                             margin: 10px;
                         }
 
@@ -136,7 +130,7 @@ $f25: 25px;
         }
 
         footer {
-            font-size: $f14;
+            font-size: $font-size-sm;
         }
     }
 }
@@ -145,11 +139,11 @@ $f25: 25px;
     .page {
         nav {
             a {
-                font-size: $f16;
+                font-size: $font-size-md;
                 padding: 20px 10px;
 
                 .nav__item {
-                    font-size: $f18;
+                    font-size: $font-size-lg;
                 }
             }
         }
@@ -177,17 +171,17 @@ $f25: 25px;
 
                         .content__latestBox__item__BoxText {
                             span {
-                                font-size: $f20;
+                                font-size: $font-size-xl;
                                 font-weight: 500;
                             }
 
                             p {
-                                font-size: $f15;
+                                font-size: $font-size-md;
                             }
 
                             button {
                                 padding: 10px 12px;
-                                font-size: $f15;
+                                font-size: $font-size-md;
                             }
                         }
                     }
@@ -198,11 +192,11 @@ $f25: 25px;
                 width: 100%;
 
                 span {
-                    font-size: $f35;
+                    font-size: $font-size-4xl;
                 }
 
                 p {
-                    font-size: $f14;
+                    font-size: $font-size-sm;
                 }
             }
         }
@@ -215,11 +209,11 @@ $f25: 25px;
             padding: 10px 40px;
 
             a {
-                font-size: $f14;
+                font-size: $font-size-sm;
                 padding: 20px 10px;
 
                 .nav__item {
-                    font-size: $f16;
+                    font-size: $font-size-md;
                 }
             }
         }
@@ -247,17 +241,17 @@ $f25: 25px;
 
                         .content__latestBox__item__BoxText {
                             span {
-                                font-size: $f20;
+                                font-size: $font-size-lg;
                                 font-weight: 500;
                             }
 
                             p {
-                                font-size: $f15;
+                                font-size: $font-size-md;
                             }
 
                             button {
                                 padding: 10px 12px;
-                                font-size: $f15;
+                                font-size: $font-size-md;
 
                             }
                         }
@@ -270,12 +264,12 @@ $f25: 25px;
                 padding: 40px 40px;
 
                 span {
-                    font-size: $f35;
+                    font-size: $font-size-4xl;
 
                 }
 
                 p {
-                    font-size: $f14;
+                    font-size: $font-size-sm;
 
                 }
             }
@@ -293,11 +287,11 @@ $f25: 25px;
             padding: 10px 30%;
 
             a {
-                font-size: $f12;
+                font-size: $font-size-sm;
                 padding: 0px 30%;
 
                 .nav__item {
-                    font-size: $f14;
+                    font-size: $font-size-sm;
                 }
             }
         }
@@ -323,16 +317,16 @@ $f25: 25px;
 
                             span {
                                 font-weight: 500;
-                                font-size: $f18;
+                                font-size: $font-size-lg;
                             }
 
                             p {
-                                font-size: $f13;
+                                font-size: $font-size-sm;
                             }
 
                             button {
                                 padding: 9px 11px;
-                                font-size: $f13;
+                                font-size: $font-size-sm;
 
                             }
                         }
@@ -349,17 +343,17 @@ $f25: 25px;
                 width: 100%;
 
                 span {
-                    font-size: $f25;
+                    font-size: $font-size-2xl;
 
                 }
 
                 p {
-                    font-size: $f12;
+                    font-size: $font-size-sm;
                 }
             }
 
             footer {
-                font-size: $f12;
+                font-size: $font-size-sm;
             }
         }
     }
