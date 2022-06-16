@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@mixin hr {
+    margin: 20px 0px;
+    border: 1px solid rgb(240, 240, 240);
+    background-color: rgb(240, 240, 240);
+}
+
+@mixin blueButton() {
+    padding: 10px 12px;
+    background-color: #428bca;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+    $font-size-sm: 0.875rem;
+    $font-size-md: 1rem; //16
+    $font-size-lg: 1.125rem;
+    $font-size-xl: 1.25rem;
+    $font-size-2xl: 1.5rem;
+    $font-size-3xl: 2rem;
+    $font-size-4xl: 2rem; //32
+    $font-size-5xl :  3rem;//48
+.page {
+    nav {
+        width: 100%;
+        background-color: black;
+        height: 45px;
+        padding: 10px 60px;
+
+        a {
+            color: gray;
+            font-size: $font-size-md;
+            text-decoration: none;
+            padding: 20px 10px;
+
+            .nav__item {
+                font-size: $font-size-lg;
+            }
+        }
+    }
+
+    .content {
+        padding: 40px 70px;
+        margin: 20px 0px;
+        width: 100%;
+
+        .content__box {
+            width: 100%;
+            padding: 60px 60px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 8px;
+
+            span {
+                font-size: $font-size-5xl;
+            }
+
+            p {
+                font-size: $font-size-lg;
+                margin: 10px 0px;
+            }
+
+            button {
+                @include blueButton();
+            }
+        }
+
+        .content__latestBox {
+            width: 100%;
+
+            span {
+                font-size: $font-size-2xl;
+                font-weight: 500;
+            }
+
+            .content__latestBox__item {
+                margin-top: 10px;
+                display: flex;
+
+                .content__latestBox__item__Box {
+                    margin-right: 10px;
+                    border: 1px solid rgb(238, 238, 238);
+                    border-radius: 5px;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        padding: 5px;
+                    }
+
+                    .content__latestBox__item__BoxText {
+                        text-align: center;
+                        margin: 20px 10px;
+
+                        p {
+                            font-size: $font-size-sm;
+                            margin: 10px;
+                        }
+
+                        button {
+                            @include blueButton();
+                            margin-right: 5px;
+                        }
+
+                        .info {
+                            background-color: white;
+                            color: black;
+                            border: 1px solid rgb(218, 217, 217);
+                        }
+                    }
+                }
+            }
+
+            hr {
+                @include hr;
+            }
+
+            .foot {
+                margin: 50px 0px;
+            }
+        }
+
+        footer {
+            font-size: $font-size-sm;
+        }
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .page {
+        nav {
+            a {
+                font-size: $font-size-md;
+                padding: 20px 10px;
+
+                .nav__item {
+                    font-size: $font-size-lg;
+                }
+            }
+        }
+
+        .content {
+            margin: 0px 0px;
+            padding: 50px 50px;
+            width: 100%;
+
+            .content__latestBox {
+                width: 100%;
+
+                .foot {
+                    margin: 45px 0px;
+                }
+
+                .content__latestBox__item {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .content__latestBox__item__Box {
+                        margin-bottom: 20px;
+                        width: 48%;
+
+                        .content__latestBox__item__BoxText {
+                            span {
+                                font-size: $font-size-xl;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                font-size: $font-size-md;
+                            }
+
+                            button {
+                                padding: 10px 12px;
+                                font-size: $font-size-md;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content__box {
+                width: 100%;
+
+                span {
+                    font-size: $font-size-4xl;
+                }
+
+                p {
+                    font-size: $font-size-sm;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:599px) {
+    .page {
+        nav {
+            padding: 10px 40px;
+
+            a {
+                font-size: $font-size-sm;
+                padding: 20px 10px;
+
+                .nav__item {
+                    font-size: $font-size-md;
+                }
+            }
+        }
+
+        .content {
+            margin: 0px 0px;
+            padding: 40px 40px;
+            width: 100%;
+
+            .content__latestBox {
+                width: 100%;
+
+                .foot {
+                    margin: 40px 0px;
+                }
+
+                .content__latestBox__item {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .content__latestBox__item__Box {
+                        margin-bottom: 20px;
+                        width: 47%;
+
+                        .content__latestBox__item__BoxText {
+                            span {
+                                font-size: $font-size-lg;
+                                font-weight: 500;
+                            }
+
+                            p {
+                                font-size: $font-size-md;
+                            }
+
+                            button {
+                                padding: 10px 12px;
+                                font-size: $font-size-md;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content__box {
+                width: 100%;
+                padding: 40px 40px;
+
+                span {
+                    font-size: $font-size-4xl;
+
+                }
+
+                p {
+                    font-size: $font-size-sm;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:260px) and (max-width:424px) {
+    .page {
+        nav {
+            width: 100%;
+            background-color: black;
+            display: grid;
+            height: 140px;
+            padding: 10px 30%;
+
+            a {
+                font-size: $font-size-sm;
+                padding: 0px 30%;
+
+                .nav__item {
+                    font-size: $font-size-sm;
+                }
+            }
+        }
+
+        .content {
+            margin: 0px 0px;
+            padding: 30px 30px;
+            width: 100%;
+
+            .content__latestBox {
+                width: 100%;
+
+                .content__latestBox__item {
+                    margin-top: 10px;
+                    display: block;
+
+                    .content__latestBox__item__Box {
+                        margin-bottom: 20px;
+                        width: 98%;
+
+                        .content__latestBox__item__BoxText {
+                            margin: 10px 10px;
+
+                            span {
+                                font-weight: 500;
+                                font-size: $font-size-lg;
+                            }
+
+                            p {
+                                font-size: $font-size-sm;
+                            }
+
+                            button {
+                                padding: 9px 11px;
+                                font-size: $font-size-sm;
+
+                            }
+                        }
+                    }
+                }
+
+                .foot {
+                    margin: 35px 0px;
+                }
+            }
+
+            .content__box {
+                padding: 30px 40px;
+                width: 100%;
+
+                span {
+                    font-size: $font-size-2xl;
+
+                }
+
+                p {
+                    font-size: $font-size-sm;
+                }
+            }
+
+            footer {
+                font-size: $font-size-sm;
+            }
+        }
+    }
+}
